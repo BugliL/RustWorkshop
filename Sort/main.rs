@@ -1,6 +1,8 @@
-pub fn sort(v: Vec<u8>) -> Vec<u8> {
+pub fn sort(mut v: Vec<u8>) -> Vec<u8> {
     // step0: use the sort function provided by the standard library
     // step1: implement bubble sort https://en.wikipedia.org/wiki/Bubble_sort
+    
+    v.sort();
     v
 }
 

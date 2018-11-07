@@ -4,8 +4,34 @@ fn main() {
 pub fn sort(mut v: Vec<u8>) -> Vec<u8> {
     // step0: use the sort function provided by the standard library
     // step1: implement bubble sort https://en.wikipedia.org/wiki/Bubble_sort
-
-    v.sort();
+    /*
+    procedure bubbleSort( A : list of sortable items )
+    n = length(A)
+    repeat
+        swapped = false
+        for i = 1 to n-1 inclusive do
+            /* if this pair is out of order */
+            if A[i-1] > A[i] then
+                /* swap them and remember something changed */
+                swap( A[i-1], A[i] )
+                swapped = true
+            end if
+        end for
+    until not swapped
+    end procedure
+     */
+    let mut isSwapped = true;
+    while isSwapped{
+        for i in 1..v.len(){
+            isSwapped = false;
+            if v[i-1] > v[i] {
+                let x = v[i];
+                v[i] = v[i-1];
+                v[i-1] = x;
+                isSwapped = true;
+            }
+        }
+    }
     v
 }
 

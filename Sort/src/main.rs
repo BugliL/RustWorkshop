@@ -20,15 +20,15 @@ pub fn sort(mut v: Vec<u8>) -> Vec<u8> {
     until not swapped
     end procedure
      */
-    let mut isSwapped = true;
-    while isSwapped{
+    let mut is_swapped = true;
+    while is_swapped{
         for i in 1..v.len(){
-            isSwapped = false;
+            is_swapped = false;
             if v[i-1] > v[i] {
                 let x = v[i];
                 v[i] = v[i-1];
                 v[i-1] = x;
-                isSwapped = true;
+                is_swapped = true;
             }
         }
     }

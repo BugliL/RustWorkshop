@@ -1,4 +1,5 @@
 Repo per esercitarsi con gli esercizi su Rust
+https://d-dorazio.github.io/rust101/
 
 INSTALL RUST
 ```
